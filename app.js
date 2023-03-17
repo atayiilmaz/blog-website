@@ -29,14 +29,11 @@ app.get("/posts/:postTitle", function (req,res) {
 
   const requestedTitle = _.lowerCase(req.params.postTitle)
 
-  posts.forEach(post => {
+  posts.forEach(function(post) {
     const storedTitle = _.lowerCase(post.postTitle)
 
-    if(requestedTitle === storedTitle){
-      res.render("post", {posts: posts, requestedPostTitle: post.postTitle, requestedPostBody: post.postBody })
-    }else{
-      res.send("Not Found")
-      res.redirect("/")
+    if(storedTitle === requestedTitle){
+      res.render("post", {requestedPostTitle: post.postTitle, requestedPostBody: post.postBody })
     }
   })
 
@@ -68,11 +65,6 @@ const post = {
   posts.push(post)
   res.redirect("/")
 })
-
-
-
-
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
