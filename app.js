@@ -39,6 +39,7 @@ app.get("/", function(req,res){
   
 })
 
+//get posts
 app.get("/posts/:postId", function (req,res) {
 
   const requestedPostId = req.params.postId;
