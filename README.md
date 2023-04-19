@@ -52,5 +52,7 @@ POST http://localhost:3000/compose --> post a new post
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/atayiilmaz/blog-website/blob/main/public/img/Screenshot%202023-04-09%20151710.png)
+![App Screenshot](https://github.com/atayiilmaz/blog-website/blob/main/public/img/Screenshot%202023-04-09%20152113.png)
+![App Screenshot](https://github.com/atayiilmaz/blog-website/blob/main/public/img/Screenshot%202023-04-09%20152137.png)
 
